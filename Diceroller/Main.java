@@ -1,7 +1,11 @@
 import java.util.Random;
 import java.util.Scanner;
 
-
+//This program simulates rolling a number of dice specified by the user.
+//It generates random numbers between 1 and 6 for each die rolled
+//and prints the result along with a visual representation of each die.
+//The total of all dice rolled is also calculated and displayed.
+//--David Cavan
 
 public class Main {
     @SuppressWarnings("ConvertToTryWithResources")
