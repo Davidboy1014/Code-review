@@ -2,6 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class RockPaperScissors {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         // This is a simple Rock, Paper, Scissors game.
         // The user will play against the computer.
@@ -9,13 +10,13 @@ public class RockPaperScissors {
         // The user will input their choice.
         // The winner will be determined based on the rules of the game.
         String[] Compchoices = {"rock", "paper", "scissors"};
+        Scanner scanner = new Scanner(System.in);
+        Random ran = new Random();
         System.out.println("Welcome to Rock, Paper, Scissors!");
         String agian = "y";
+        
         while(agian.equals("y")){
             System.out.println("Enter your choice: rock, paper, or scissors");
-            Scanner scanner = new Scanner(System.in);
-            Random ran = new Random();
-
 
             String UserChoice = scanner.nextLine().toLowerCase();
             if (!UserChoice.equals("rock") && !UserChoice.equals("paper") && !UserChoice.equals("scissors")){
@@ -38,6 +39,7 @@ public class RockPaperScissors {
             System.out.println("Want to play again? (y/n)");
             agian = scanner.next().toLowerCase();
         }
+        scanner.close();
     }
     
 }
