@@ -53,7 +53,7 @@ Follow up: Can you solve it using O(1) (i.e. constant) memory?
  * }
  */
 class Solution {
-    public boolean hasCycle(ListNode head) {
+    public boolean hasCycl () {
         return false;
     }
 }
