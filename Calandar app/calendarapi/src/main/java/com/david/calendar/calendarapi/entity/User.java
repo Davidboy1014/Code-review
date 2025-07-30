@@ -16,6 +16,8 @@ public class User {
     private String Last;
     private String Email;
     private String Password;
+
+    //Initatlizer for the user
     public User(){
     }
     public User(String First, String Last, String Email, String Password){
@@ -26,6 +28,7 @@ public class User {
         this.Password = Password;
     }
     
+    //Getter and Setter for First name
     public String GetFirst(){
         return First;
     }
@@ -33,7 +36,7 @@ public class User {
         this.First = First;
     }
 
-
+    //Getter and Setter for Last name
     public String GetLast(){
         return Last;
     }
@@ -41,7 +44,7 @@ public class User {
         this.First = Last;
     }
 
-
+    //Getter and Setter for Email
     public String GetEmail(){
         return Email;
     }
@@ -49,6 +52,7 @@ public class User {
         this.First = Email;
     }
 
+    //Getter and Setter for Password
     public String GetPassword(){
         return Password;
     }
