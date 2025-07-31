@@ -1,6 +1,5 @@
 package com.david.calendar.calendarapi.entity;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,50 +20,49 @@ public class User {
     public User(){
     }
     public User(String firstName, String lastName, String email, String Password){
-        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.Password = Password;
     }
     
-    public long GetId(){
+    public long getId(){
         return id;
     }
-    public void SetId(long id){
+    public void setId(long id){
         this.id = id;
     }
 
 
     //Getter and Setter for firstName name
-    public String GetfirstName(){
+    public String getFirstName(){
         return firstName;
     }
-    public void SetfirstName(String firstName){
+    public void setFirstName(String firstName){
         this.firstName = firstName;
     }
 
     //Getter and Setter for lastName name
-    public String GetlastName(){
+    public String getlastName(){
         return lastName;
     }
-    public void SetlastName(String lastName){
+    public void setlastName(String lastName){
         this.lastName = lastName;
     }
 
     //Getter and Setter for email
-    public String Getemail(){
+    public String getEmail(){
         return email;
     }
-    public void Setemail(String email){
+    public void setEmail(String email){
         this.firstName = email;
     }
 
     //Getter and Setter for Password
-    public String GetPassword(){
+    public String getPassword(){
         return Password;
     }
-    public void SetPassword(String Password){
+    public void setPassword(String Password){
         this.firstName = Password;
     }
 
